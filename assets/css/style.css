@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: auto;
+
+    background-color: #f1fbfb;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Title and description */
+
+.title{
+    font-size: 60px;
+    
+    color: #3d5a80;
+
+    margin-top: 200px;
+}
+
+.description{
+    font-size: 20px;
+    font-weight: 300;
+
+    color: #3d5a80;
+
+    margin-bottom: 40px;
+}
+
+/* Form */
+
+#city{
+    width: auto;
+    height: 100px;
+}
+
+#city-input{
+    width: 500px;
+    height: 45px;
+
+    padding: 20px;
+
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+
+    border-radius: 50px;
+    border: none;
+
+    background-color: white;
+    color: #3d5a80;
+
+    box-shadow: 0px 0px 5px #d4d4d4;
+}
+
+#city-input:hover{
+    box-shadow: 0px 0px 5px #aeaeae;
+}
+
+#city-input:focus{
+    outline: none;
+    box-shadow: 0px 0px 5px #aeaeae;
+}
+
+#btn{
+    width: 100px;
+    height: 45px;
+
+    background-color: #3d5a80;
+    color: white;
+
+    border-radius: 100px;
+    border: none;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    margin-left: 8px;
+
+    cursor: pointer;
+
+    transition: 0.4s;
+}
+
+#btn:hover{
+    color: #3d5a80;
+    background-color: white;
+
+    box-shadow: 0px 0px 5px #b8bec3;
+}
+
+#btn:focus{
+    outline: none;
+}
+
+/* categories */
+
+.categories-title{
+    margin: 20px 0;
+}
+
+.categories-title h2{
+    font-size: 40px;
+    
+    color: #3d5a80;
+}
+
+.categories{
+    max-width: 1550px;
+
+    margin: 0 auto;
+
+    font-size: 16px;
+    font-weight: 300;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 240px;
+    height: 170px;
+
+    margin: 10px 10px 0 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: white;
+}
+
+.card .name{
+    font-size: 20px;
+    font-weight: 300;
+
+    margin-bottom: 15px;
+
+    color: #3d5a80;
+
+    text-align: center;
+}
+
+.card .score-container{
+    width: 100px;
+    height: 100px;
+
+    background-color: #3d5a80;
+
+    border-radius: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .score-container .score{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+/* description and total score of the city */
+
+.sum-and-score{
+    max-width: 1050px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 100px auto;
+}
+
+.summary-title{
+    font-size: 40px;
+    
+    color: #3d5a80;
+}
+
+.summary{
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+
+    color: #3d5a80;
+
+    margin: 40px 30px;
+}
+
+.summary p:last-of-type{
+    margin-top: 15px;
+}
+
+.total-score{
+    font-size: 40px;
+    
+    color: #3d5a80;
+}
+
+/* media query for tablets */
+
+@media only screen and (max-width: 992px){
+   body{
+    min-height: 200vh;
+    height: fit-content;
+    justify-content: flex-start;
+   }
+
+   .title{
+    margin-top: 50px;
+   }
+
+   .sum-and-score{
+    margin-top: 70px;
+   }
+
+   .summary{
+    margin-top: 20px;
+   }
+}
+
+/* media query for smartphones */
+
+@media only screen and (max-width: 768px){
+    
+    .title{
+        font-size: 45px;
+    }
+
+    .description{
+        width: 280px;
+        
+        margin-bottom: 20px;
+
+        font-size: 16px;
+
+        text-align: center;
+    }
+
+    #city{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #city-input{
+        width: 300px;
+    }
+
+    #btn{
+        margin-top: 20px; 
+        margin-left: 0;
+
+        width: 150px;
+        height: 50px;
+    }
+
+    .categories-title h2, .summary-title{
+        font-size: 30px;
+    }
+
+    .categories-title{
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+
+    .summary{
+        font-size: 18px;
+
+        margin-bottom: 20px;
+    }
+
+    .total-score{
+        font-size: 30px;
+    }
+}
