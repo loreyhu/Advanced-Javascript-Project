@@ -13,10 +13,11 @@ Here you can find a lot of categories and their scores, a description of the cit
 - CSS
 - JAVASCRIPT
 - AXIOS
+- LODASH
 
 ## Where to try it
 
-![App Screenshot](assets/img/screenshot.png)
+![App Screenshot](./src/img/screenshot.png)
 
 To try this website follow the link below!
 
