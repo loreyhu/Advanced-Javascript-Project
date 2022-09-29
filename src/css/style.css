@@ -106,6 +106,15 @@ body{
     outline: none;
 }
 
+/* error */
+
+.error{
+    color: #a4161a;
+
+    font-size: 20px;
+    font-weight: 500;
+}
+
 /* categories */
 
 .categories-title{

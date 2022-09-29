@@ -1,6 +1,6 @@
 import "../css/style.css"
 import axios from "axios"
-const _ = require("lodash")
+import _ from "lodash"
 
 // Global variables
 
@@ -138,7 +138,10 @@ function createElements(e){
                 categoriesTitle.appendChild(scoresTitle) 
     
             }else{
-                alert("There is some problem with categories's data")
+                let categoriesError = document.createElement("p")
+                categoriesError.classList.add("error")
+                categoriesError.innerHTML = "There is some problem with categories's data"
+                categoriesDiv.appendChild(categoriesError)
             }
 
 
@@ -159,7 +162,10 @@ function createElements(e){
                 sumAndScore.appendChild(summaryParagraph)
 
             }else{
-                alert("There is some problem with summary's data")
+                let summaryError = document.createElement("p")
+                summaryError.classList.add("error")
+                summaryError.innerHTML = "There is some problem with summary's data"
+                sumAndScore.appendChild(summaryError)
             }
 
             // city's total score
@@ -175,7 +181,10 @@ function createElements(e){
                 sumAndScore.appendChild(totalScore)
 
             }else{
-                alert("There is some problem with score's data")
+                let scoreError = document.createElement("p")
+                scoreError.classList.add("error")
+                scoreError.innerHTML = "There is some problem with score's data"
+                sumAndScore.appendChild(scoreError)
             }
 
 
